@@ -1,6 +1,11 @@
 <button 
+    (click)="getAllPokemon()"
     pButton 
     pRipple 
-    label="Submit" 
+    label="Ver pokemones" 
     class="p-button-success">
 </button>
+
+<ul *ngFor="let item of listAllPokemons">
+   <li> {{ item.name }} </li> 
+</ul>

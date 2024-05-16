@@ -6,6 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from 'primeng/api';
 import { PrimengModule } from './shared/primeng/primeng.module';
+import { HttpClientModule } from '@angular/common/http';
+import { DomainModule } from './domain/domain.module';
+import { InfraestructureModule } from './infraestructure/infraestructure.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ApplicationModule } from './application/application.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +19,12 @@ import { PrimengModule } from './shared/primeng/primeng.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ApplicationModule,
+    InfraestructureModule,
+    DomainModule,
+    HttpClientModule,
     AppRoutingModule,
     SharedModule,
     PrimengModule
